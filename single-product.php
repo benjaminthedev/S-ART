@@ -13,24 +13,6 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<!-- <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content modal-lg">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <?php //the_field('video_pop_up'); ?>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div> -->
-
 
 <div id="modal" class="modal fade bd-example-modal-lg mt-5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
@@ -100,16 +82,28 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<h1 class="ways-heading">Ways To Watch</h1>
 
 
-						<ul class="ways-to-watch">
+						<!-- <ul class="ways-to-watch">
 							<li class="dvd"><img src="https://wordpress-293167-900918.cloudwaysapps.com/wp-content/uploads/2019/06/DVD-ICON.jpg" class="icons-list"> DVD - A physical copy to your address</li>
 							<li class="download"> <img src="https://wordpress-293167-900918.cloudwaysapps.com/wp-content/uploads/2019/06/Download-Icon.jpg" class="icons-list">Download to your computer </li>
 							<li class="stream"><img src="https://wordpress-293167-900918.cloudwaysapps.com/wp-content/uploads/2019/06/Stream-Icon.jpg" class="icons-list"> Stream to your device, watch instantly </li>
-						</ul>	
+						</ul>	 -->
 
 
+						
+				<ul class="ways-to-watch">
+					<?php if( get_field('dvd') ): ?>
+						<li class="dvd"><img src="https://wordpress-293167-900918.cloudwaysapps.com/wp-content/uploads/2019/06/DVD-ICON.jpg" class="icons-list"> <?php the_field('dvd'); ?></li>
+					<?php endif; ?>	
 
-
-
+					<?php if( get_field('download') ): ?>	
+						<li class="download"> <img src="https://wordpress-293167-900918.cloudwaysapps.com/wp-content/uploads/2019/06/Download-Icon.jpg" class="icons-list"><?php the_field('download'); ?></li>
+					<?php endif; ?>	
+					
+					<?php if( get_field('stream') ): ?>
+						<li class="stream"><img src="https://wordpress-293167-900918.cloudwaysapps.com/wp-content/uploads/2019/06/Stream-Icon.jpg" class="icons-list"><?php the_field('stream'); ?></li>
+					<?php endif; ?>	
+				</ul>		
+						
 						
 
 							<?php
