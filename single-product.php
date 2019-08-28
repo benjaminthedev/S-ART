@@ -80,15 +80,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div class="product-info">
 
 						<h1 class="ways-heading">Ways To Watch</h1>
-
-
-						<!-- <ul class="ways-to-watch">
-							<li class="dvd"><img src="https://wordpress-293167-900918.cloudwaysapps.com/wp-content/uploads/2019/06/DVD-ICON.jpg" class="icons-list"> DVD - A physical copy to your address</li>
-							<li class="download"> <img src="https://wordpress-293167-900918.cloudwaysapps.com/wp-content/uploads/2019/06/Download-Icon.jpg" class="icons-list">Download to your computer </li>
-							<li class="stream"><img src="https://wordpress-293167-900918.cloudwaysapps.com/wp-content/uploads/2019/06/Stream-Icon.jpg" class="icons-list"> Stream to your device, watch instantly </li>
-						</ul>	 -->
-
-
 						
 				<ul class="ways-to-watch">
 					<?php if( get_field('dvd') ): ?>

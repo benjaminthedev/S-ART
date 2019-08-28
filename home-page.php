@@ -48,9 +48,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 											
 									
 									?>
-								<li class="increment">
-	
-														
+								<li class="increment">											
 								
 										<div id="woo-cat-image" style="background-image: url(<?php echo $image; ?>);">
 							
