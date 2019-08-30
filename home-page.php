@@ -118,7 +118,7 @@ wp_reset_postdata();?>
 
 
 		<div class="col-md-6">
-			<h3 class="text-center deals-heading">Special Deals</h3>
+			<h3 class="text-center deals-heading">Top Sellers</h3>
 
 			<?php if( have_rows('woocommerce_on_sale_boxes') ): ?>
 				<ul class="on-sale-featured">
