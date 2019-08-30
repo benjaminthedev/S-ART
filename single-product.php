@@ -83,15 +83,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 						
 				<ul class="ways-to-watch">
 					<?php if( get_field('dvd') ): ?>
-						<li class="dvd"><img src="https://wordpress-293167-900918.cloudwaysapps.com/wp-content/uploads/2019/06/DVD-ICON.jpg" class="icons-list"> <?php the_field('dvd'); ?></li>
+						<li class="dvd"><img src="https://wordpress-293167-970825.cloudwaysapps.com/wp-content/uploads/2019/06/DVD-ICON.jpg" class="icons-list"> <?php the_field('dvd'); ?></li>
 					<?php endif; ?>	
 
 					<?php if( get_field('download') ): ?>	
-						<li class="download"> <img src="https://wordpress-293167-900918.cloudwaysapps.com/wp-content/uploads/2019/06/Download-Icon.jpg" class="icons-list"><?php the_field('download'); ?></li>
+						<li class="download"> <img src="https://wordpress-293167-970825.cloudwaysapps.com/wp-content/uploads/2019/06/Download-Icon.jpg" class="icons-list"><?php the_field('download'); ?></li>
 					<?php endif; ?>	
 					
 					<?php if( get_field('stream') ): ?>
-						<li class="stream"><img src="https://wordpress-293167-900918.cloudwaysapps.com/wp-content/uploads/2019/06/Stream-Icon.jpg" class="icons-list"><?php the_field('stream'); ?></li>
+						<li class="stream"><img src="https://wordpress-293167-970825.cloudwaysapps.com/wp-content/uploads/2019/06/Stream-Icon.jpg" class="icons-list"><?php the_field('stream'); ?></li>
 					<?php endif; ?>	
 				</ul>		
 						
@@ -106,11 +106,21 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 												if( get_row_layout() == 'content_info' ):?>
 												<div class="info-text">
-													<p><strong><?php the_sub_field('title'); ?></strong></p>
-													<p>Running Time: <?php the_sub_field('running_time'); ?></p>
-													<p>Screen Size: <?php the_sub_field('screen_size'); ?></p>
-													<p><strong>DVD has these subtitle</strong>: <?php the_sub_field('subtitles'); ?></p>
-													<p><?php the_sub_field('extra_info'); ?></p>	
+													<?php if( get_field('title') ): ?>
+														<p><strong><?php the_sub_field('title'); ?></strong></p>
+													<?php endif; ?>	
+
+													<?php if( get_field('running_time') ): ?>
+														<p>Running Time: <?php the_sub_field('running_time'); ?></p>
+													<?php endif; ?>	
+												
+													<?php if( get_field('subtitles') ): ?>
+														<p><strong>DVD has these subtitle</strong>: <?php the_sub_field('subtitles'); ?></p>
+													<?php endif; ?>	
+
+													<?php if( get_field('extra_info') ): ?>	
+														<p><?php the_sub_field('extra_info'); ?></p>	
+													<?php endif; ?>	
 												</div>
 												<?php 
 

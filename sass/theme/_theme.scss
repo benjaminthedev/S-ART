@@ -476,15 +476,30 @@ input.submit-newsletter:hover{
   padding: 15px;
 }
 
+div#comments {
+    display: none;
+}
+
 //Related & Upsale Products 
-.single-product section.up-sells.upsells.products span.price,
+//.single-product section.up-sells.upsells.products span.price,
+/*
+This above was the correct way but now wanted it changed
+
+*/
+
+section.related.products {
+    display: none;
+}
+
 .single-product section.related.products span.price{
   display:none !important;
 }
 
-section.up-sells.upsells.products{
-  display: none;
-}
+
+
+// section.up-sells.upsells.products{
+//   display: none;
+// }
 
 .single-product a.woocommerce-LoopProduct-link.woocommerce-loop-product__link{
   color: #000;
@@ -495,6 +510,15 @@ section.up-sells.upsells.products{
 img.icons-list {
     width: 6%;
     margin-right: 10px;
+}
+
+
+//Quote
+.single-product em,
+.single-product span.quote {
+    color: #ff9000;
+    font-size: 22px;
+    font-weight: 800;
 }
 
 
