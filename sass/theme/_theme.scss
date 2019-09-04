@@ -332,6 +332,42 @@ section.newsletter-sp {
   box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.75);
 }
 
+section.newsletter-sp p {
+  color: #fff;
+}
+
+section.newsletter-sp a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+div#mce-success-response,
+div#mce-error-response {
+  color: #fff;
+  font-size: 22px;
+}
+
+.indicates-required,
+.page-id-11344 strong {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+section.newsletter-sp ul {
+  margin-left: 0px;
+}
+
+section.newsletter-sp li {
+  list-style-type: none;
+}
+
+
+section.newsletter-sp input[type='checkbox'] {
+  margin-right: 10px;
+}
+
+
 .page-id-11344 input[type="text"] {
   width: 100%;
 }
@@ -473,7 +509,8 @@ input.submit-newsletter:hover {
 
 // Submit btn newsletter
 input.submit-newsletter,
-.before-footer .newsletter-sign-up a {
+.before-footer .newsletter-sign-up a,
+input#mc-embedded-subscribe {
   background: #ff9000;
   border: none;
   color: #fff;
@@ -491,7 +528,8 @@ input.submit-newsletter,
 }
 
 input.submit-newsletter:hover,
-.before-footer .newsletter-sign-up a:hover {
+.before-footer .newsletter-sign-up a:hover,
+input#mc-embedded-subscribe:hover {
   background: #545454;
 }
 
@@ -718,7 +756,6 @@ tr.woocommerce-grouped-product-list-item.tr-3 {
   margin: 6px;
   padding: 10px 10px 41px 10px !important;
 }
-
 
 //Easter in Art
 .postid-11167 tr.woocommerce-grouped-product-list-item.tr-3 {
