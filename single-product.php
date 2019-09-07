@@ -106,19 +106,19 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 												if( get_row_layout() == 'content_info' ):?>
 												<div class="info-text">
-													<?php if( get_field('title') ): ?>
+													<?php if( get_row_layout('title') ): ?>
 														<p><strong><?php the_sub_field('title'); ?></strong></p>
 													<?php endif; ?>	
 
-													<?php if( get_field('running_time') ): ?>
-														<p>Running Time: <?php the_sub_field('running_time'); ?></p>
-													<?php endif; ?>	
+													<!-- <?php //if( get_row_layout('running_time') ): ?>
+														<p>Running Time: <?php //	the_sub_field('running_time'); ?></p>
+													<?php //endif; ?>	 -->
 												
-													<?php if( get_field('subtitles') ): ?>
+													<?php if( get_row_layout('subtitles') ): ?>
 														<p><strong>DVD has these subtitle</strong>: <?php the_sub_field('subtitles'); ?></p>
 													<?php endif; ?>	
 
-													<?php if( get_field('extra_info') ): ?>	
+													<?php if( get_row_layout('extra_info') ): ?>	
 														<p><?php the_sub_field('extra_info'); ?></p>	
 													<?php endif; ?>	
 												</div>
