@@ -7,7 +7,6 @@ jQuery(window).on("load", function () {
 
     jQuery("section#headerSliderProduct #clicked-para").click(function () {
         jQuery('#modal').modal('show');
-        // console.log('Testing Tesla Model 3');
     });
 
 
@@ -16,7 +15,6 @@ jQuery(window).on("load", function () {
         var src = jQuery(this).find('iframe').attr('src');
 
         jQuery(this).on('click', function () {
-
             jQuery(this).find('iframe').attr('src', '');
             jQuery(this).find('iframe').attr('src', src);
 
