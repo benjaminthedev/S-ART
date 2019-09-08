@@ -762,6 +762,11 @@ tr.woocommerce-grouped-product-list-item.tr-3 {
   width: 40%;
 }
 
+//
+.postid-602 tr.woocommerce-grouped-product-list-item.tr-3 {
+  width: 44%;
+}
+
 //Singular Product
 // .single-product .summary.entry-summary {
 //     width: 40%;
@@ -863,14 +868,44 @@ ul#menu-useful-links li a:hover {
   padding: 20px;
 }
 
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
-  .search-section {
+ .search-section {
     display: none;
   }
 
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+
+ul.woocommerce-products-cats li{
+      width:90%;
+     }
+     .woocommerce.columns-5 ul.products li.product {
+      width: 100%;  
+    }
+    .single-product .woocommer-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+    .product-info-wrap {
+      width: 100%;
+    }
+    .product-info-images {
+      display: none !important;
+    }
+    tr.woocommerce-grouped-product-list-item.tr-3{
+      width: 80%;
+    }
+
+    .single-product .woocommer-wrapper .woocommerce {
+      width: 100%;
+    }
 
 
+
+
+
+  .search-section {
+    display: none;
+  }
 
   ul.home-cats li {
     list-style-type: none !important;
@@ -880,12 +915,42 @@ ul#menu-useful-links li a:hover {
     margin-bottom: 30px !important;
     /* margin: 0 auto; */
   }
-
-
 }
 
 // Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+    ul.woocommerce-products-cats li{
+      width:90%;
+     }
+     .woocommerce.columns-5 ul.products li.product {
+      width: 100%;  
+    }
+    .single-product .woocommer-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+    .product-info-wrap {
+      width: 100%;
+    }
+    .product-info-images {
+      display: none !important;
+    }
+    tr.woocommerce-grouped-product-list-item.tr-3{
+      width: 80%;
+    }
+
+    .single-product .woocommer-wrapper .woocommerce {
+      width: 100%;
+    }
+}
+
+@media(min-width: 769px) and (max-width: 1189px){
+  ul.woocommerce-products-cats li{
+    width: 20%;
+  }
+}
+
+
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {}
