@@ -872,6 +872,13 @@ ul#menu-useful-links li a:hover {
 //     display: none;
 //   }
 
+
+//Search result
+.search-results article.downloadable,
+.search-results .instock{
+    display: none;
+}
+
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
 

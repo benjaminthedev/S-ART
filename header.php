@@ -71,17 +71,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="search-section">
 
 
-					<?php //echo do_shortcode ('[woocommerce_product_search]'); ?>
+					<?php echo do_shortcode ('[woocommerce_product_search]'); ?>
 
 					<?php //echo do_shortcode('[yith_woocommerce_ajax_search]');?>
 
-					
-
-
-
-
-
-					 <!-- <form method="get" id="searchform" action="<?php //echo esc_url( home_url( '/' ) ); ?>" role="search">
+				 <!-- <form method="get" id="searchform" action="<?php //echo esc_url( home_url( '/' ) ); ?>" role="search">
 					<label class="sr-only" for="s"><?php //esc_html_e( 'Search', 'understrap' ); ?></label>
 					<div class="input-group">
 						<input class="field form-control" id="s" name="s" type="text"
