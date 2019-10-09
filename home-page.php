@@ -113,10 +113,7 @@ if ( $query->have_posts() ) {
 	// do nothing.
 }
 wp_reset_postdata();?>
-	</div>										
-
-
-
+	</div>					
 		<div class="col-md-6">
 			<h3 class="text-center deals-heading">Top Sellers</h3>
 
