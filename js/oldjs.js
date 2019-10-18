@@ -21,14 +21,7 @@
 // });​
  //jQuery('.single-product td.woocommerce-grouped-product-list-item__label').prependTo('.single-product .    ');
 
-
-
-
-
 //Plain JS
-
-
-
 // Get the modal
 // let modal = document.getElementById("myModal");
 // let yeah = document.querySelectorAll('.embed-container iframe');

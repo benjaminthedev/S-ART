@@ -24,8 +24,6 @@ jQuery(window).on("load", function () {
 });
 //end jquery
 
-
-
 // finding .single-product tr and killing link
 
 const link_kill = document.querySelectorAll('.single-product td label a');
@@ -34,12 +32,9 @@ link_kill.forEach(function (link_kill) {
     link_kill.removeAttribute("href");
 });
 
-
-
-
 const ele = document.querySelector('section#headerSliderProduct #clicked-para');
 
-console.log(ele);
+// console.log(ele);
 
 function clicky() {
     let x = 0;
@@ -73,4 +68,3 @@ function addingClassesToTr(){
 }
 
 addingClassesToTr();
-

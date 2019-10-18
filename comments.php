@@ -110,9 +110,7 @@ if ( post_password_required() ) {
 				<?php } ?>
 
 			</nav><!-- #comment-nav-below -->
-
 		<?php endif; // check for comment navigation. ?>
-
 	<?php endif; // endif have_comments(). ?>
 
 	<?php
