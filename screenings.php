@@ -28,8 +28,12 @@ $container = get_theme_mod( 'understrap_container_type' );
           <div class="col-md-12">
             <h1><?php the_field('title'); ?></h1>
             <?php the_field('text_section'); ?>    
-          </div>
+          </div>  
+        </div><!-- end row -->
 
+
+
+        <div class="row">
         <div class="col-md-6">
             <?php
                 if( have_rows('left_content') ):
@@ -59,7 +63,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 endif;
             ?>
         </div>	
-
+    </div><!-- end row -->            
 
 		</div><!-- .row -->
 	</div><!-- #content -->
